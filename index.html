@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="mainPage">
+      <header id = "top">
+        <h1> Recipes Finder </h1>
+        <p> Search for recipes by ingredients </p>
+      </header>
+      <a href="#top" class="top">Back on top</a>
+      <form>
+        <input type="text" id="items-search" placeholder="Example: egg" required/>
+        <button type="submit">Search</button>
+      </form>
+      <a href="#videos"class="hidden-link">Go to videos</a>
+      <a href="#books" class="hidden-link">Go to books</a>
+      <a href="#websites" class="hidden-link">Go to websites</a>
+      <div id="websites" class = "websites">
+        <div id="error-message"></div>
+        <div class="web-results hidden"></div>
+      </div>
+
+      <div id="books" class = "books">
+        <div id="error-message"></div>
+        <div class="book-results hidden"></div>
+      </div>
+
+      <div id="videos" class = "videos">
+        
+        <div id="error-message"></div>
+        <div class="video-results hidden"></div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
